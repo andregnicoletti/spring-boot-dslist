@@ -1,5 +1,6 @@
 package com.nicoletti.dslist.model.mappers;
 
+import com.nicoletti.dslist.model.dtos.GameDTO;
 import com.nicoletti.dslist.model.dtos.GameMinDTO;
 import com.nicoletti.dslist.model.entities.GameEntity;
 import org.mapstruct.Mapper;
@@ -11,6 +12,8 @@ public interface GameMapping {
     GameEntity dtoMinToEntity(GameMinDTO dto);
 
     GameMinDTO toDtoMin(GameEntity entity);
+
+    GameDTO toDto(GameEntity entity);
 
     // Atualização: aplica dados do DTO em uma entidade existente
     void updateGameFromMinDto(GameMinDTO dto, @MappingTarget GameEntity entity);

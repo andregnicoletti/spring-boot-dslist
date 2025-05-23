@@ -1,5 +1,6 @@
 package com.nicoletti.dslist.model.mappers;
 
+import com.nicoletti.dslist.model.dtos.GameDTO;
 import com.nicoletti.dslist.model.dtos.GameMinDTO;
 import com.nicoletti.dslist.model.entities.GameEntity;
 import javax.annotation.processing.Generated;
@@ -7,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-05-23T13:54:03-0300",
+    date = "2025-05-23T14:25:33-0300",
     comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.3 (Eclipse Adoptium)"
 )
 @Component
@@ -48,6 +49,27 @@ public class GameMappingImpl implements GameMapping {
         GameMinDTO gameMinDTO = new GameMinDTO( title, year, imgUrl, shortDescription );
 
         return gameMinDTO;
+    }
+
+    @Override
+    public GameDTO toDto(GameEntity entity) {
+        if ( entity == null ) {
+            return null;
+        }
+
+        GameDTO gameDTO = new GameDTO();
+
+        gameDTO.setId( entity.getId() );
+        gameDTO.setTitle( entity.getTitle() );
+        gameDTO.setYear( entity.getYear() );
+        gameDTO.setGenre( entity.getGenre() );
+        gameDTO.setPlatforms( entity.getPlatforms() );
+        gameDTO.setScore( entity.getScore() );
+        gameDTO.setImgUrl( entity.getImgUrl() );
+        gameDTO.setShortDescription( entity.getShortDescription() );
+        gameDTO.setLongDescription( entity.getLongDescription() );
+
+        return gameDTO;
     }
 
     @Override
