@@ -4,14 +4,14 @@ spring:
     name: dslist
 
   profiles:
-    active: dev
+    active: ${PROFILE}
 
   jpa:
     open-in-view: false
 
 logging:
   level:
-    root: INFO #DEBUG
+    root: ${LOG_LEVEL:INFO}
 
 cors:
   origins: ${CORS_ORIGINS:http://localhost:5173,http://localhost:3000}
