@@ -31,4 +31,10 @@ public class GameController {
         return ResponseEntity.ok(result);
     }
 
+    @GetMapping("/list/{id}")
+    public ResponseEntity<List<GameMinDTO>> findByListId(@PathVariable Long id) throws Exception {
+        List<GameMinDTO> result = gameService.findByList(id);
+        return ResponseEntity.ok(result);
+    }
+
 }
