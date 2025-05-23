@@ -4,7 +4,7 @@ spring:
     name: dslist
 
   profiles:
-    active: ${PROFILE}
+    active: ${PROFILE:test}
 
   jpa:
     open-in-view: false
