@@ -1,7 +1,6 @@
 package com.nicoletti.dslist.controllers;
 
-import com.nicoletti.dslist.dtos.GameMinDTO;
-import com.nicoletti.dslist.entities.GameEntity;
+import com.nicoletti.dslist.model.dtos.GameMinDTO;
 import com.nicoletti.dslist.services.GameService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;

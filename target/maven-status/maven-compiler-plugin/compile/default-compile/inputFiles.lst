@@ -1,1 +1,7 @@
+/home/andre-nicoletti/Documents/programacao/spring/spring.boot.devsuperior/intensivo.dslist/src/main/java/com/nicoletti/dslist/services/GameService.java
+/home/andre-nicoletti/Documents/programacao/spring/spring.boot.devsuperior/intensivo.dslist/src/main/java/com/nicoletti/dslist/controllers/GameController.java
+/home/andre-nicoletti/Documents/programacao/spring/spring.boot.devsuperior/intensivo.dslist/src/main/java/com/nicoletti/dslist/model/entities/GameEntity.java
+/home/andre-nicoletti/Documents/programacao/spring/spring.boot.devsuperior/intensivo.dslist/src/main/java/com/nicoletti/dslist/model/dtos/GameMinDTO.java
+/home/andre-nicoletti/Documents/programacao/spring/spring.boot.devsuperior/intensivo.dslist/src/main/java/com/nicoletti/dslist/repositories/GameRepository.java
+/home/andre-nicoletti/Documents/programacao/spring/spring.boot.devsuperior/intensivo.dslist/src/main/java/com/nicoletti/dslist/model/mappers/GameMapping.java
 /home/andre-nicoletti/Documents/programacao/spring/spring.boot.devsuperior/intensivo.dslist/src/main/java/com/nicoletti/dslist/DslistApplication.java
