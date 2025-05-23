@@ -10,7 +10,7 @@ import lombok.*;
 @Setter
 @Entity
 @Table(name = "tb_game")
-public class Game {
+public class GameEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
