@@ -1,8 +1,0 @@
-com/nicoletti/dslist/model/mappers/GameMappingImpl.class
-com/nicoletti/dslist/repositories/GameRepository.class
-com/nicoletti/dslist/DslistApplication.class
-com/nicoletti/dslist/model/dtos/GameMinDTO.class
-com/nicoletti/dslist/model/entities/GameEntity.class
-com/nicoletti/dslist/controllers/GameController.class
-com/nicoletti/dslist/services/GameService.class
-com/nicoletti/dslist/model/mappers/GameMapping.class

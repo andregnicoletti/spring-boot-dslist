@@ -1,15 +1,15 @@
 package com.nicoletti.dslist.model.mappers;
 
-import com.nicoletti.dslist.model.GameMinProjection;
 import com.nicoletti.dslist.model.dtos.GameDTO;
 import com.nicoletti.dslist.model.dtos.GameMinDTO;
 import com.nicoletti.dslist.model.entities.GameEntity;
+import com.nicoletti.dslist.model.projections.GameMinProjection;
 import javax.annotation.processing.Generated;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-05-23T14:59:32-0300",
+    date = "2025-05-23T19:22:37-0300",
     comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.3 (Eclipse Adoptium)"
 )
 @Component
@@ -79,15 +79,15 @@ public class GameMappingImpl implements GameMapping {
             return null;
         }
 
-        String title = null;
         String year = null;
+        String title = null;
         String imgUrl = null;
         String shortDescription = null;
 
-        title = projection.getTitle();
-        if ( projection.getYear() != null ) {
-            year = String.valueOf( projection.getYear() );
+        if ( projection.getGameYear() != null ) {
+            year = String.valueOf( projection.getGameYear() );
         }
+        title = projection.getTitle();
         imgUrl = projection.getImgUrl();
         shortDescription = projection.getShortDescription();
 

@@ -1,6 +1,6 @@
 package com.nicoletti.dslist.services;
 
-import com.nicoletti.dslist.model.GameMinProjection;
+import com.nicoletti.dslist.model.projections.GameMinProjection;
 import com.nicoletti.dslist.model.dtos.GameDTO;
 import com.nicoletti.dslist.model.dtos.GameMinDTO;
 import com.nicoletti.dslist.model.entities.GameEntity;
