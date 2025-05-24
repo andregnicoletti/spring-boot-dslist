@@ -37,4 +37,20 @@ public class GameService {
         List<GameMinProjection> result = gameRepository.searchByList(listId);
         return result.stream().map(gameMapping::projectionToDtoMin).toList();
     }
+
+    @Transactional
+    public List<GameMinDTO> move(Long listId, int sourceIndex, int destinationIndex) {
+        List<GameMinProjection> list = gameRepository.searchByList(listId);
+        GameMinProjection source = list.remove(sourceIndex);
+        list.add(destinationIndex, source);
+
+        int min = sourceIndex < destinationIndex ? sourceIndex : destinationIndex;
+        int max = sourceIndex < destinationIndex ? destinationIndex : sourceIndex;
+
+        for (int i = min; i <= max; i++) {
+            gameRepository.updateBelongingPosition(listId, list.get(i).getId(), i);
+        }
+
+        return this.findByList(listId);
+    }
 }
