@@ -74,9 +74,10 @@ src/
 │   ├── java/
 │   │   └── com/nicoletti/dslist/
 │   │       ├── controllers/      # Camada de entrada da API (REST Controllers)
-│   │       ├── dto/              # Objetos de transferência de dados (Data Transfer Objects)
-│   │       ├── entities/         # Entidades JPA
-│   │       ├── mappers/          # Conversão com MapStruct
+│   │       ├── models/               
+│   │       │   └── dto/              # Objetos de transferência de dados (Data Transfer Objects)
+│   │       │   ├── entities/         # Entidades JPA
+│   │       │   ├── mappers/          # Conversão com MapStruct
 │   │       ├── repositories/     # Interfaces JPA
 │   │       └── services/         # Regras de negócio
 │   └── resources/
