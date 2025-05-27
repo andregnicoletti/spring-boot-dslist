@@ -81,7 +81,7 @@ src/
 │   │       ├── repositories/     # Interfaces JPA
 │   │       └── services/         # Regras de negócio
 │   └── resources/
-│       └── application.properties
+│       └── application.yml
 ```
 
 ---
