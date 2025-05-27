@@ -9,6 +9,8 @@ Este é um projeto de backend desenvolvido durante um treinamento intensivo de u
 
 ## 🚀 Tecnologias Utilizadas
 
+- **MapStruct** para mapeamento automático entre DTOs e entidades
+
 - **Java 21**
 - **Spring Boot 3**
   - Spring Web
@@ -70,12 +72,13 @@ docker-compose up -d
 src/
 ├── main/
 │   ├── java/
-│   │   └── com.nicoletti.dslist/
-│   │       ├── controllers/
-│   │       ├── dto/
-│   │       ├── entities/
-│   │       ├── repositories/
-│   │       └── services/
+│   │   └── com/nicoletti/dslist/
+│   │       ├── controllers/      # Camada de entrada da API (REST Controllers)
+│   │       ├── dto/              # Objetos de transferência de dados (Data Transfer Objects)
+│   │       ├── entities/         # Entidades JPA
+│   │       ├── mappers/          # Conversão com MapStruct
+│   │       ├── repositories/     # Interfaces JPA
+│   │       └── services/         # Regras de negócio
 │   └── resources/
 │       └── application.properties
 ```
