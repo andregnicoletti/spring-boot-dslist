@@ -93,14 +93,6 @@ src/
 
 ---
 
-## 📸 Imagens da API em Produção
-
-| Endpoint `/games` | Endpoint `/lists/1/games` |
-|-------------------|---------------------------|
-| ![Games](https://i.imgur.com/a1XHk6b.png) | ![List Games](https://i.imgur.com/a2XwHsE.png) |
-
----
-
 ## 💡 Sobre o Projeto
 
 Este projeto foi construído para consolidar conhecimentos em:
